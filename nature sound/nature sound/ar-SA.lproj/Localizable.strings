@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  nature sound
+
+  Created by admin on 4/7/18.
+  Copyright © 2018 com.digimon. All rights reserved.
+*/
+
+"rain_water" = "المطر والماء";
+"nature_forest" = "الطبيعة والغابات";
+"farm" = "مزرعة";
+"city" = "مدينة";
+"relax" = "أصول معاهدة";
+"limit_sound_playing" = "لعب 4 أصوات كحد أقصى للحصول على أفضل تجربة";

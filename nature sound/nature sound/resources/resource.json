@@ -1,0 +1,338 @@
+{
+  "rain": [
+    {
+      "id":"11",
+      "name":"rain",
+      "soundUri": "mp3_rain",
+      "avatarName": "ic_rain"
+    },
+    {
+      "id":"12",
+      "name":"thunderstorm",
+      "soundUri": "mp3_thunderstorm_long",
+      "avatarName": "ic_thunderstorm"
+    },
+    {
+      "id":"13",
+      "name":"river",
+      "soundUri": "new_stream",
+      "avatarName": "ic_river"
+    },
+    {
+      "id":"14",
+      "name":"waterfall",
+      "soundUri": "mp3_waterfall",
+      "avatarName": "ic_waterfall"
+    },
+    {
+      "id":"15",
+      "name":"ocean",
+      "soundUri": "mp3_ocean",
+      "avatarName": "ic_ocean"
+    }
+  ],
+  "nature": [
+    {
+      "id":"21",
+      "name":"bird",
+      "soundUri": "mp3_bird",
+      "avatarName": "ic_bird"
+    },
+    {
+      "id":"22",
+      "name":"wind",
+      "soundUri": "mp3_strong_wind",
+      "avatarName": "ic_wind"
+    },
+    {
+      "id":"23",
+      "name":"campfire",
+      "soundUri": "mp3_fire",
+      "avatarName": "ic_fire"
+    },
+    {
+      "id":"24",
+      "name":"frog",
+      "soundUri": "frog",
+      "avatarName": "ic_frog"
+    },
+    {
+      "id":"25",
+      "name":"wolf",
+      "soundUri": "wolf_howl",
+      "avatarName": "ic_wolf"
+    },
+    {
+      "id":"26",
+      "name":"cicada",
+      "soundUri": "mp3_cicadas_noise",
+      "avatarName": "ic_cicada"
+    },
+    {
+      "id":"27",
+      "name":"forest",
+      "soundUri": "mp3_forest",
+      "avatarName": "ic_forest"
+    },
+    {
+      "id":"28",
+      "name":"seagull",
+      "soundUri": "mp3_seagull",
+      "avatarName": "ic_seagull"
+    },
+    {
+      "id":"29",
+      "name":"owl",
+      "soundUri": "horned_owl_mp3",
+      "avatarName": "ic_owl"
+    },
+    {
+      "id":"210",
+      "name":"gorilla",
+      "soundUri": "mp3_gorilla",
+      "avatarName": "ic_gorilla"
+    },
+    {
+      "id":"211",
+      "name":"tiger",
+      "soundUri": "mp3_tiger",
+      "avatarName": "ic_tiger"
+    },
+    {
+      "id":"212",
+      "name":"Goose",
+      "soundUri": "mp3_geese",
+      "avatarName": "ic_goose"
+    }
+  ],
+  "city": [
+    {
+      "id":"31",
+      "name":"train",
+      "soundUri": "mp3_train",
+      "avatarName": "ic_train"
+    },
+    {
+      "id":"32",
+      "name":"car",
+      "soundUri": "mp3_car",
+      "avatarName": "ic_car"
+    },
+    {
+      "id":"33",
+      "name":"plane",
+      "soundUri": "mp3_airplane_landing",
+      "avatarName": "ic_plane"
+    },
+    {
+      "id":"34",
+      "name":"ic_church",
+      "soundUri": "mp3_church_bell",
+      "avatarName": "ic_church"
+    },
+    {
+      "id":"35",
+      "name":"clock",
+      "soundUri": "mp3_clock_mantle",
+      "avatarName": "ic_clock"
+    },
+    {
+      "id":"36",
+      "name":"centre station",
+      "soundUri": "mp3_centre_station",
+      "avatarName": "ic_train_station"
+    },
+    {
+      "id":"37",
+      "name":"traffic",
+      "soundUri": "mp3_traffic",
+      "avatarName": "ic_traffic"
+    },
+    {
+      "id":"38",
+      "name":"fan",
+      "soundUri": "new_fan",
+      "avatarName": "icon_fan"
+    },
+    {
+      "id":"39",
+      "name":"white noise",
+      "soundUri": "new_white_noise",
+      "avatarName": "icon_white_noise"
+    },
+    {
+      "id":"310",
+      "name":"Ambulance",
+      "soundUri": "mp3_ambulance",
+      "avatarName": "ic_ambulance"
+    },
+    {
+      "id":"311",
+      "name":"Construction",
+      "soundUri": "mp3_construction",
+      "avatarName": "ic_construction"
+    }
+  ],
+  "relax": [
+    {
+      "id":"41",
+      "name":"flute",
+      "soundUri": "best_flute_ringtone",
+      "avatarName": "ic_flute"
+    },
+    {
+      "id":"42",
+      "name":"guitar",
+      "soundUri": "mp3_guitar",
+      "avatarName": "ic_guitar"
+    },
+    {
+      "id":"43",
+      "name":"violin",
+      "soundUri": "lovers_violin_mp3",
+      "avatarName": "ic_violin"
+    },
+    {
+      "id":"44",
+      "name":"piano",
+      "soundUri": "mp3_twilight_piano",
+      "avatarName": "ic_piano"
+    },
+    {
+      "id":"45",
+      "name":"wind chime",
+      "soundUri": "mp3_chime",
+      "avatarName": "ic_wind_chime"
+    },
+    {
+      "id":"46",
+      "name":"harp",
+      "soundUri": "harp_mp3",
+      "avatarName": "ic_harp"
+    },
+    {
+      "id":"47",
+      "name":"harmonica",
+      "soundUri": "nice_harmonica_mp3",
+      "avatarName": "ic_harmonica"
+    },
+    {
+      "id":"48",
+      "name":"gong",
+      "soundUri": "mp3_gong",
+      "avatarName": "ic_gong"
+    },
+    {
+      "id":"49",
+      "name":"bamboo flute",
+      "soundUri": "chinese_flute_mp3",
+      "avatarName": "ic_bamboo_flute"
+    }
+  ],
+  "favorite" : [
+    {
+      "id":"51",
+      "name":"Chinese flute",
+      "soundUri": "fav_chinese_flute",
+      "avatarName": "bg_bamboo"
+    },
+    {
+      "id":"52",
+      "name":"Morning beach relaxing with guitar",
+      "soundUri": "fav_morning_beach_relaxing_guitar",
+      "avatarName": "bg_beach"
+    },
+    {
+      "id":"53",
+      "name":"Chill song",
+      "soundUri": "fav_chill_song",
+      "avatarName": "bg_child_song"
+    },
+    {
+      "id":"54",
+      "name":"Singing bowl",
+      "soundUri": "fav_singing_bow",
+      "avatarName": "temple"
+    },
+    {
+      "id":"56",
+      "name":"Calm music for kid",
+      "soundUri": "fav_calm_music",
+      "avatarName": "bg_calm"
+    }
+  ],
+  "farm" : [
+    {
+      "id":"61",
+      "name":"farm",
+      "soundUri": "farm",
+      "avatarName": "ic_farm"
+    },
+    {
+      "id":"62",
+      "name":"rooster",
+      "soundUri": "rooster",
+      "avatarName": "ic_rooster"
+    },
+    {
+      "id":"63",
+      "name":"hen",
+      "soundUri": "hen_chicken",
+      "avatarName": "ic_hen"
+    },
+    {
+      "id":"64",
+      "name":"dove",
+      "soundUri": "dove_cooing",
+      "avatarName": "ic_dove"
+    },
+    {
+      "id":"65",
+      "name":"duck",
+      "soundUri": "duck_quack",
+      "avatarName": "ic_duck"
+    },
+    {
+      "id":"66",
+      "name":"goat",
+      "soundUri": "goat",
+      "avatarName": "ic_goat"
+    },
+    {
+      "id":"67",
+      "name":"cricket",
+      "soundUri": "mp3_cricket",
+      "avatarName": "ic_cricket"
+    },
+    {
+      "id":"68",
+      "name":"sheep",
+      "soundUri": "mp3_sheep",
+      "avatarName": "ic_sheep"
+    },
+    {
+      "id":"69",
+      "name":"cow",
+      "soundUri": "mp3_cow",
+      "avatarName": "ic_cow"
+    },
+    {
+      "id":"610",
+      "name":"horse",
+      "soundUri": "mp3_horse",
+      "avatarName": "ic_horse"
+    },
+    {
+      "id":"611",
+      "name":"pig",
+      "soundUri": "mp3_pig",
+      "avatarName": "ic_pig"
+    },
+    {
+      "id":"612",
+      "name":"cat",
+      "soundUri": "mp3_cat",
+      "avatarName": "ic_cat"
+    }
+  ]
+}

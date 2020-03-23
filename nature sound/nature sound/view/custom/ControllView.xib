@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ControllView" customModule="nature_sound" customModuleProvider="target">
+            <connections>
+                <outlet property="counter" destination="J5y-Jk-yx7" id="5IK-wv-Lm6"/>
+                <outlet property="mView" destination="iN0-l3-epB" id="QGc-xc-R26"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="342"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0m-hI-uhZ" customClass="RoundedBackground" customModule="nature_sound" customModuleProvider="target">
+                    <rect key="frame" x="96" y="292" width="140" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8Z-W2-IQE">
+                            <rect key="frame" x="15" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="R2E-EU-1Jc"/>
+                                <constraint firstAttribute="width" constant="40" id="gWh-Ke-gjb"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="ic_close"/>
+                            <connections>
+                                <action selector="onClose:" destination="-1" eventType="touchUpInside" id="4eb-rJ-A5b"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsY-wN-cx3">
+                            <rect key="frame" x="75" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="UXO-Zi-bAn"/>
+                                <constraint firstAttribute="width" constant="40" id="yVe-gl-rc1"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="ic_setting_dark"/>
+                            <connections>
+                                <action selector="onOpenSetting:" destination="-1" eventType="touchUpInside" id="Eq8-na-lGL"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5y-Jk-yx7">
+                            <rect key="frame" x="110" y="3" width="12" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="1" green="0.35450485448138358" blue="0.021395875423634303" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="J5y-Jk-yx7" firstAttribute="leading" secondItem="ZsY-wN-cx3" secondAttribute="trailing" constant="-5" id="2yZ-kP-AKr"/>
+                        <constraint firstItem="I8Z-W2-IQE" firstAttribute="centerY" secondItem="t0m-hI-uhZ" secondAttribute="centerY" id="DV3-oh-siV"/>
+                        <constraint firstItem="ZsY-wN-cx3" firstAttribute="leading" secondItem="I8Z-W2-IQE" secondAttribute="trailing" constant="20" id="Evq-i0-YGY"/>
+                        <constraint firstItem="ZsY-wN-cx3" firstAttribute="centerY" secondItem="t0m-hI-uhZ" secondAttribute="centerY" id="KW7-bO-ZrW"/>
+                        <constraint firstAttribute="height" constant="50" id="ZeJ-xD-QDR"/>
+                        <constraint firstAttribute="width" constant="140" id="aCa-J8-9DS"/>
+                        <constraint firstItem="I8Z-W2-IQE" firstAttribute="leading" secondItem="t0m-hI-uhZ" secondAttribute="leading" constant="15" id="mfz-jM-Pmo"/>
+                        <constraint firstItem="J5y-Jk-yx7" firstAttribute="top" secondItem="t0m-hI-uhZ" secondAttribute="top" constant="3" id="sGV-zX-v2H"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="t0m-hI-uhZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ATw-90-MCF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="t0m-hI-uhZ" secondAttribute="bottom" id="zJk-E7-WFz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="74" y="-1163"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close" width="128" height="128"/>
+        <image name="ic_setting_dark" width="128" height="128"/>
+    </resources>
+</document>

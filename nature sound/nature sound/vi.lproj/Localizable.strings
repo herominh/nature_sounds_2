@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  nature sound
+
+  Created by admin on 4/7/18.
+  Copyright © 2018 com.digimon. All rights reserved.
+*/
+
+"rain_water" = "Mưa & Nước";
+"nature_forest" = "Thiên nhiên & Rừng";
+"farm" = "Nông trại";
+"city" = "Thành phố";
+"relax" = "Nhạc cụ";
+"limit_sound_playing" = "Chơi tối đa 4 âm thanh để có được trải nghiệm tốt nhất";

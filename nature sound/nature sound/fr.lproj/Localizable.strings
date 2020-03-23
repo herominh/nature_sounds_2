@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  nature sound
+
+  Created by admin on 4/7/18.
+  Copyright © 2018 com.digimon. All rights reserved.
+*/
+
+"rain_water" = "Pluie et l'eau";
+"nature_forest" = "La nature et forêt";
+"farm" = "Le ferme";
+"city" = "La ville";
+"relax" = "Instrument";
+"limit_sound_playing" = "Jouez au maximum 4 sons pour une meilleure expérience";

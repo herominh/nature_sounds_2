@@ -1,0 +1,17 @@
+
+/* Class = "UIViewController"; title = "Home"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Home";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "DW5-LL-f9X"; */
+"DW5-LL-f9X.text" = "Label";
+
+/* Class = "UILabel"; text = "Favorite"; ObjectID = "Lwv-NP-oYI"; */
+"Lwv-NP-oYI.text" = "Favorite";
+
+/* Class = "UIButton"; normalTitle = "play"; ObjectID = "mMr-uq-5JH"; */
+"mMr-uq-5JH.normalTitle" = "play";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "sko-yA-dnT"; */
+"sko-yA-dnT.text" = "Label";
+
+"rain_water" = "mua va nuoc"

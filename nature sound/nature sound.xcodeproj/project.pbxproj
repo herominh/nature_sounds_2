@@ -1,0 +1,912 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67C7620C7200DC0E2B50A15E /* Pods_nature_sound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D1244E39145C077EC1DF53 /* Pods_nature_sound.framework */; };
+		84153E201FBDF472002063CF /* ControllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84153E1F1FBDF472002063CF /* ControllView.swift */; };
+		84153E221FC04625002063CF /* roundedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84153E211FC04625002063CF /* roundedBackground.swift */; };
+		841AA8DE205E826D00E3F9C7 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AA8DD205E826D00E3F9C7 /* constants.swift */; };
+		841D38DD237FE6D3006C1262 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D38DC237FE6D3006C1262 /* SceneDelegate.swift */; };
+		841D3901237FEE2E006C1262 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 846EE1E11FA4DC5600903EDD /* Main.storyboard */; };
+		841D3902237FEEE3006C1262 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 846EE1E71FA4DC5600903EDD /* Assets.xcassets */; };
+		841D3903237FEF3F006C1262 /* resource.json in Sources */ = {isa = PBXBuildFile; fileRef = 841AA8C3205E214600E3F9C7 /* resource.json */; };
+		841D3904237FEF3F006C1262 /* ControllView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 84153E1D1FBDF3A8002063CF /* ControllView.xib */; };
+		841D3905237FEF3F006C1262 /* LaunchScreen.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 846EE1E91FA4DC5600903EDD /* LaunchScreen.storyboard */; };
+		841D393E237FEFF0006C1262 /* nature sound.app in Sources */ = {isa = PBXBuildFile; fileRef = 846EE1DA1FA4DC5600903EDD /* nature sound.app */; };
+		841D393F237FEFF0006C1262 /* Pods-nature sound.debug.xcconfig in Sources */ = {isa = PBXBuildFile; fileRef = C0A1D610E1FF13D1B8C94F99 /* Pods-nature sound.debug.xcconfig */; };
+		841D3940237FEFF0006C1262 /* Pods-nature sound.release.xcconfig in Sources */ = {isa = PBXBuildFile; fileRef = 58C5E4F7620930A3681E9AAA /* Pods-nature sound.release.xcconfig */; };
+		841D3941237FEFF0006C1262 /* Pods_nature_sound.framework in Sources */ = {isa = PBXBuildFile; fileRef = D5D1244E39145C077EC1DF53 /* Pods_nature_sound.framework */; };
+		841D3945237FF3A2006C1262 /* soundResources.json in Sources */ = {isa = PBXBuildFile; fileRef = 841D3944237FF296006C1262 /* soundResources.json */; };
+		841D394A23813C3D006C1262 /* data.txt in Sources */ = {isa = PBXBuildFile; fileRef = 841D394923813B5F006C1262 /* data.txt */; };
+		841D394E23836EA3006C1262 /* resource.json in Resources */ = {isa = PBXBuildFile; fileRef = 841D3948237FFA48006C1262 /* resource.json */; };
+		841D39862384598A006C1262 /* mp3_rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E431FC33488002063CF /* mp3_rain.mp3 */; };
+		841D39872384599B006C1262 /* mp3_thunderstorm_long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E561FC3348E002063CF /* mp3_thunderstorm_long.mp3 */; };
+		841D3989238459E4006C1262 /* chinese_flute_mp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E371FC33486002063CF /* chinese_flute_mp3.mp3 */; };
+		841D398A238459E4006C1262 /* dove_cooing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E511FC3348B002063CF /* dove_cooing.mp3 */; };
+		841D398B238459E4006C1262 /* duck_quack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E2F1FC33484002063CF /* duck_quack.mp3 */; };
+		841D398C238459E4006C1262 /* farm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E2C1FC33484002063CF /* farm.mp3 */; };
+		841D398D238459F1006C1262 /* frog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E4E1FC3348B002063CF /* frog.mp3 */; };
+		841D398E238459F1006C1262 /* goat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E471FC33489002063CF /* goat.mp3 */; };
+		841D398F238459F1006C1262 /* harp_mp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E401FC33488002063CF /* harp_mp3.mp3 */; };
+		841D3990238459F1006C1262 /* hen_chicken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E4A1FC3348A002063CF /* hen_chicken.mp3 */; };
+		841D3991238459F1006C1262 /* horned_owl_mp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E451FC33489002063CF /* horned_owl_mp3.mp3 */; };
+		841D3992238459F1006C1262 /* lovers_violin_mp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E341FC33485002063CF /* lovers_violin_mp3.mp3 */; };
+		841D3993238459F1006C1262 /* mp3_airplane_landing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E3A1FC33487002063CF /* mp3_airplane_landing.mp3 */; };
+		841D3994238459F1006C1262 /* mp3_bird.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E421FC33488002063CF /* mp3_bird.mp3 */; };
+		841D3995238459F1006C1262 /* mp3_car.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E391FC33486002063CF /* mp3_car.mp3 */; };
+		841D3996238459F1006C1262 /* mp3_centre_station.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E301FC33484002063CF /* mp3_centre_station.mp3 */; };
+		841D3997238459F1006C1262 /* mp3_chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E3C1FC33487002063CF /* mp3_chime.mp3 */; };
+		841D3998238459F1006C1262 /* mp3_church_bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E501FC3348B002063CF /* mp3_church_bell.mp3 */; };
+		841D3999238459F1006C1262 /* mp3_cicadas_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E311FC33485002063CF /* mp3_cicadas_noise.mp3 */; };
+		841D399A238459F1006C1262 /* mp3_clock_mantle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E331FC33485002063CF /* mp3_clock_mantle.mp3 */; };
+		841D399B238459F1006C1262 /* mp3_cricket.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E3F1FC33487002063CF /* mp3_cricket.mp3 */; };
+		841D399C238459F1006C1262 /* mp3_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E541FC3348D002063CF /* mp3_fire.mp3 */; };
+		841D399D238459F1006C1262 /* mp3_forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E381FC33486002063CF /* mp3_forest.mp3 */; };
+		841D399E238459F1006C1262 /* mp3_gong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E321FC33485002063CF /* mp3_gong.mp3 */; };
+		841D399F238459F1006C1262 /* mp3_guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E491FC3348A002063CF /* mp3_guitar.mp3 */; };
+		841D39A0238459F1006C1262 /* mp3_ocean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E481FC33489002063CF /* mp3_ocean.mp3 */; };
+		841D39A1238459F1006C1262 /* mp3_strong_wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E4F1FC3348B002063CF /* mp3_strong_wind.mp3 */; };
+		841D39A7238459F1006C1262 /* mp3_gorilla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841AA8CC205E21B900E3F9C7 /* mp3_gorilla.mp3 */; };
+		841D39AE238459F1006C1262 /* mp3_train.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E4D1FC3348B002063CF /* mp3_train.mp3 */; };
+		841D39AF238459F1006C1262 /* mp3_twilight_piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E361FC33486002063CF /* mp3_twilight_piano.mp3 */; };
+		841D39B0238459F1006C1262 /* mp3_waterfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E3B1FC33487002063CF /* mp3_waterfall.mp3 */; };
+		841D39B1238459F1006C1262 /* new_fan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E3D1FC33487002063CF /* new_fan.mp3 */; };
+		841D39B2238459F1006C1262 /* new_stream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E441FC33489002063CF /* new_stream.mp3 */; };
+		841D39B3238459F1006C1262 /* new_white_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E551FC3348E002063CF /* new_white_noise.mp3 */; };
+		841D39B4238459F1006C1262 /* nice_harmonica_mp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E3E1FC33487002063CF /* nice_harmonica_mp3.mp3 */; };
+		841D39B5238459F1006C1262 /* rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E2E1FC33484002063CF /* rooster.mp3 */; };
+		841D39B6238459F1006C1262 /* wolf_howl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E411FC33488002063CF /* wolf_howl.mp3 */; };
+		841D39B7238459F1006C1262 /* best_flute_ringtone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84153E2A1FC33476002063CF /* best_flute_ringtone.mp3 */; };
+		841D39CF23845E3D006C1262 /* mp3_cow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841D39C423845E35006C1262 /* mp3_cow.mp3 */; };
+		841D39D023845E3D006C1262 /* mp3_seagull.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841D39C523845E36006C1262 /* mp3_seagull.mp3 */; };
+		841D39D123845E3D006C1262 /* mp3_sheep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841D39C623845E37006C1262 /* mp3_sheep.mp3 */; };
+		841D39D223845E3D006C1262 /* mp3_construction.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841D39C723845E37006C1262 /* mp3_construction.mp3 */; };
+		841D39D323845E3D006C1262 /* mp3_traffic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841D39C823845E38006C1262 /* mp3_traffic.mp3 */; };
+		841D39D423845E3D006C1262 /* mp3_cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841D39C923845E39006C1262 /* mp3_cat.mp3 */; };
+		841D39D523845E3D006C1262 /* mp3_horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841D39CA23845E39006C1262 /* mp3_horse.mp3 */; };
+		841D39D623845E3D006C1262 /* mp3_tiger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841D39CB23845E3A006C1262 /* mp3_tiger.mp3 */; };
+		841D39D723845E3D006C1262 /* mp3_geese.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841D39CC23845E3B006C1262 /* mp3_geese.mp3 */; };
+		841D39D823845E3D006C1262 /* mp3_pig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841D39CD23845E3B006C1262 /* mp3_pig.mp3 */; };
+		841D39D923845E3D006C1262 /* mp3_ambulance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841D39CE23845E3C006C1262 /* mp3_ambulance.mp3 */; };
+		841D39DC2387051E006C1262 /* IntroPageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D39DB2387051E006C1262 /* IntroPageItemController.swift */; };
+		841D39DE238A2829006C1262 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D39DD238A2829006C1262 /* IntroViewController.swift */; };
+		841D39E1238A7FB5006C1262 /* BaseStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D39E0238A7FB5006C1262 /* BaseStyle.swift */; };
+		841D39E3238A7FCB006C1262 /* CommonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D39E2238A7FCB006C1262 /* CommonStyle.swift */; };
+		841D39E5238A7FFF006C1262 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D39E4238A7FFF006C1262 /* CustomColors.swift */; };
+		842E910C240BAD150084791C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84699C522078B654002A1352 /* Localizable.strings */; };
+		845D815D239034FE008461F3 /* SoundsSettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D815C239034FE008461F3 /* SoundsSettingController.xib */; };
+		845D8160239036E6008461F3 /* SoundSettingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D815E239036E6008461F3 /* SoundSettingItemCell.swift */; };
+		845D8161239036E6008461F3 /* SoundSettingItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D815F239036E6008461F3 /* SoundSettingItemCell.xib */; };
+		845D81672390425D008461F3 /* SoundsSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D81662390425D008461F3 /* SoundsSettingController.swift */; };
+		845D8169239047B0008461F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D8168239047B0008461F3 /* HomeViewController.swift */; };
+		845D816B2393AD60008461F3 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D816A2393AD60008461F3 /* SoundManager.swift */; };
+		84695E3723996BC2001DD00E /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84695E3623996BC2001DD00E /* SoundCell.swift */; };
+		846EE1DE1FA4DC5600903EDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EE1DD1FA4DC5600903EDD /* AppDelegate.swift */; };
+		846EE1E61FA4DC5600903EDD /* nature_sound.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 846EE1E41FA4DC5600903EDD /* nature_sound.xcdatamodeld */; };
+		846EE1F81FA4E13B00903EDD /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EE1F71FA4E13B00903EDD /* FavoritesViewController.swift */; };
+		846EE1FA1FA4E15500903EDD /* CollectionSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EE1F91FA4E15500903EDD /* CollectionSoundViewController.swift */; };
+		846EE1FC1FA629D700903EDD /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EE1FB1FA629D700903EDD /* FavoriteCell.swift */; };
+		846EE2001FA78A2400903EDD /* SoundItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EE1FF1FA78A2400903EDD /* SoundItem.swift */; };
+		846EE2031FB0CF9400903EDD /* PlaySoundItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EE2021FB0CF9400903EDD /* PlaySoundItem.swift */; };
+		84D08F0D1FB213A0004A5C28 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D08F0C1FB213A0004A5C28 /* Singleton.swift */; };
+		84D08F141FB5FB91004A5C28 /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D08F131FB5FB91004A5C28 /* SoundButton.swift */; };
+		84D08F161FB8BA4B004A5C28 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D08F151FB8BA4B004A5C28 /* ColorExtention.swift */; };
+		84D08F1C1FBB4E6A004A5C28 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D08F1B1FBB4E6A004A5C28 /* Notifier.swift */; };
+		84F3B13C205D11BF003E9BAF /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3B13B205D11BF003E9BAF /* ViewControllerExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58C5E4F7620930A3681E9AAA /* Pods-nature sound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nature sound.release.xcconfig"; path = "Pods/Target Support Files/Pods-nature sound/Pods-nature sound.release.xcconfig"; sourceTree = "<group>"; };
+		84153E1D1FBDF3A8002063CF /* ControllView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControllView.xib; sourceTree = "<group>"; };
+		84153E1F1FBDF472002063CF /* ControllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllView.swift; sourceTree = "<group>"; };
+		84153E211FC04625002063CF /* roundedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedBackground.swift; sourceTree = "<group>"; };
+		84153E2A1FC33476002063CF /* best_flute_ringtone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = best_flute_ringtone.mp3; sourceTree = "<group>"; };
+		84153E2C1FC33484002063CF /* farm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = farm.mp3; sourceTree = "<group>"; };
+		84153E2E1FC33484002063CF /* rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rooster.mp3; sourceTree = "<group>"; };
+		84153E2F1FC33484002063CF /* duck_quack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = duck_quack.mp3; sourceTree = "<group>"; };
+		84153E301FC33484002063CF /* mp3_centre_station.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_centre_station.mp3; sourceTree = "<group>"; };
+		84153E311FC33485002063CF /* mp3_cicadas_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_cicadas_noise.mp3; sourceTree = "<group>"; };
+		84153E321FC33485002063CF /* mp3_gong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_gong.mp3; sourceTree = "<group>"; };
+		84153E331FC33485002063CF /* mp3_clock_mantle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_clock_mantle.mp3; sourceTree = "<group>"; };
+		84153E341FC33485002063CF /* lovers_violin_mp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lovers_violin_mp3.mp3; sourceTree = "<group>"; };
+		84153E351FC33486002063CF /* fav_calm_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fav_calm_music.mp3; sourceTree = "<group>"; };
+		84153E361FC33486002063CF /* mp3_twilight_piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_twilight_piano.mp3; sourceTree = "<group>"; };
+		84153E371FC33486002063CF /* chinese_flute_mp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chinese_flute_mp3.mp3; sourceTree = "<group>"; };
+		84153E381FC33486002063CF /* mp3_forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_forest.mp3; sourceTree = "<group>"; };
+		84153E391FC33486002063CF /* mp3_car.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_car.mp3; sourceTree = "<group>"; };
+		84153E3A1FC33487002063CF /* mp3_airplane_landing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_airplane_landing.mp3; sourceTree = "<group>"; };
+		84153E3B1FC33487002063CF /* mp3_waterfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_waterfall.mp3; sourceTree = "<group>"; };
+		84153E3C1FC33487002063CF /* mp3_chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_chime.mp3; sourceTree = "<group>"; };
+		84153E3D1FC33487002063CF /* new_fan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = new_fan.mp3; sourceTree = "<group>"; };
+		84153E3E1FC33487002063CF /* nice_harmonica_mp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nice_harmonica_mp3.mp3; sourceTree = "<group>"; };
+		84153E3F1FC33487002063CF /* mp3_cricket.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_cricket.mp3; sourceTree = "<group>"; };
+		84153E401FC33488002063CF /* harp_mp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = harp_mp3.mp3; sourceTree = "<group>"; };
+		84153E411FC33488002063CF /* wolf_howl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wolf_howl.mp3; sourceTree = "<group>"; };
+		84153E421FC33488002063CF /* mp3_bird.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_bird.mp3; sourceTree = "<group>"; };
+		84153E431FC33488002063CF /* mp3_rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_rain.mp3; sourceTree = "<group>"; };
+		84153E441FC33489002063CF /* new_stream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = new_stream.mp3; sourceTree = "<group>"; };
+		84153E451FC33489002063CF /* horned_owl_mp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horned_owl_mp3.mp3; sourceTree = "<group>"; };
+		84153E461FC33489002063CF /* fav_chill_song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fav_chill_song.mp3; sourceTree = "<group>"; };
+		84153E471FC33489002063CF /* goat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = goat.mp3; sourceTree = "<group>"; };
+		84153E481FC33489002063CF /* mp3_ocean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_ocean.mp3; sourceTree = "<group>"; };
+		84153E491FC3348A002063CF /* mp3_guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_guitar.mp3; sourceTree = "<group>"; };
+		84153E4A1FC3348A002063CF /* hen_chicken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hen_chicken.mp3; sourceTree = "<group>"; };
+		84153E4D1FC3348B002063CF /* mp3_train.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_train.mp3; sourceTree = "<group>"; };
+		84153E4E1FC3348B002063CF /* frog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = frog.mp3; sourceTree = "<group>"; };
+		84153E4F1FC3348B002063CF /* mp3_strong_wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_strong_wind.mp3; sourceTree = "<group>"; };
+		84153E501FC3348B002063CF /* mp3_church_bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_church_bell.mp3; sourceTree = "<group>"; };
+		84153E511FC3348B002063CF /* dove_cooing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dove_cooing.mp3; sourceTree = "<group>"; };
+		84153E521FC3348C002063CF /* fav_singing_bow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fav_singing_bow.mp3; sourceTree = "<group>"; };
+		84153E531FC3348D002063CF /* fav_morning_beach_relaxing_guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fav_morning_beach_relaxing_guitar.mp3; sourceTree = "<group>"; };
+		84153E541FC3348D002063CF /* mp3_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_fire.mp3; sourceTree = "<group>"; };
+		84153E551FC3348E002063CF /* new_white_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = new_white_noise.mp3; sourceTree = "<group>"; };
+		84153E561FC3348E002063CF /* mp3_thunderstorm_long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_thunderstorm_long.mp3; sourceTree = "<group>"; };
+		84153E571FC3348E002063CF /* fav_chinese_flute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fav_chinese_flute.mp3; sourceTree = "<group>"; };
+		841AA8C3205E214600E3F9C7 /* resource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = resource.json; path = ../../../../Downloads/resource.json; sourceTree = "<group>"; };
+		841AA8CC205E21B900E3F9C7 /* mp3_gorilla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_gorilla.mp3; sourceTree = "<group>"; };
+		841AA8DD205E826D00E3F9C7 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		841D38DC237FE6D3006C1262 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		841D3944237FF296006C1262 /* soundResources.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = soundResources.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		841D3948237FFA48006C1262 /* resource.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resource.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		841D394923813B5F006C1262 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		841D39C423845E35006C1262 /* mp3_cow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_cow.mp3; sourceTree = "<group>"; };
+		841D39C523845E36006C1262 /* mp3_seagull.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_seagull.mp3; sourceTree = "<group>"; };
+		841D39C623845E37006C1262 /* mp3_sheep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_sheep.mp3; sourceTree = "<group>"; };
+		841D39C723845E37006C1262 /* mp3_construction.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_construction.mp3; sourceTree = "<group>"; };
+		841D39C823845E38006C1262 /* mp3_traffic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_traffic.mp3; sourceTree = "<group>"; };
+		841D39C923845E39006C1262 /* mp3_cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_cat.mp3; sourceTree = "<group>"; };
+		841D39CA23845E39006C1262 /* mp3_horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_horse.mp3; sourceTree = "<group>"; };
+		841D39CB23845E3A006C1262 /* mp3_tiger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_tiger.mp3; sourceTree = "<group>"; };
+		841D39CC23845E3B006C1262 /* mp3_geese.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_geese.mp3; sourceTree = "<group>"; };
+		841D39CD23845E3B006C1262 /* mp3_pig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_pig.mp3; sourceTree = "<group>"; };
+		841D39CE23845E3C006C1262 /* mp3_ambulance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3_ambulance.mp3; sourceTree = "<group>"; };
+		841D39DB2387051E006C1262 /* IntroPageItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageItemController.swift; sourceTree = "<group>"; };
+		841D39DD238A2829006C1262 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		841D39E0238A7FB5006C1262 /* BaseStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStyle.swift; sourceTree = "<group>"; };
+		841D39E2238A7FCB006C1262 /* CommonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStyle.swift; sourceTree = "<group>"; };
+		841D39E4238A7FFF006C1262 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		842E910D240BADC40084791C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		842E910E240BADC40084791C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		842E910F240BADC50084791C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		842E9110240BAFFC0084791C /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
+		842E9111240BAFFC0084791C /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		842E9112240BAFFD0084791C /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		845D815C239034FE008461F3 /* SoundsSettingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundsSettingController.xib; sourceTree = "<group>"; };
+		845D815E239036E6008461F3 /* SoundSettingItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSettingItemCell.swift; sourceTree = "<group>"; };
+		845D815F239036E6008461F3 /* SoundSettingItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundSettingItemCell.xib; sourceTree = "<group>"; };
+		845D81662390425D008461F3 /* SoundsSettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsSettingController.swift; sourceTree = "<group>"; };
+		845D8168239047B0008461F3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "nature sound/controller/home/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
+		845D816A2393AD60008461F3 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		84695E3623996BC2001DD00E /* SoundCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
+		84699C502078B472002A1352 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		84699C512078B473002A1352 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		84699C532078B654002A1352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84699C562078B66D002A1352 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		846EE1DA1FA4DC5600903EDD /* nature sound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nature sound.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		846EE1DD1FA4DC5600903EDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		846EE1E21FA4DC5600903EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		846EE1E51FA4DC5600903EDD /* nature_sound.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nature_sound.xcdatamodel; sourceTree = "<group>"; };
+		846EE1E71FA4DC5600903EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		846EE1EA1FA4DC5600903EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		846EE1EC1FA4DC5600903EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846EE1F71FA4E13B00903EDD /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		846EE1F91FA4E15500903EDD /* CollectionSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSoundViewController.swift; sourceTree = "<group>"; };
+		846EE1FB1FA629D700903EDD /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		846EE1FF1FA78A2400903EDD /* SoundItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundItem.swift; sourceTree = "<group>"; };
+		846EE2021FB0CF9400903EDD /* PlaySoundItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundItem.swift; sourceTree = "<group>"; };
+		84D08F0C1FB213A0004A5C28 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		84D08F131FB5FB91004A5C28 /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
+		84D08F151FB8BA4B004A5C28 /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
+		84D08F1B1FBB4E6A004A5C28 /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		84F3B13B205D11BF003E9BAF /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		C0A1D610E1FF13D1B8C94F99 /* Pods-nature sound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nature sound.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nature sound/Pods-nature sound.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D1244E39145C077EC1DF53 /* Pods_nature_sound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nature_sound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		846EE1D71FA4DC5600903EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C7620C7200DC0E2B50A15E /* Pods_nature_sound.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F981A9E4A2C5F2754AB02FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0A1D610E1FF13D1B8C94F99 /* Pods-nature sound.debug.xcconfig */,
+				58C5E4F7620930A3681E9AAA /* Pods-nature sound.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		222F34F01AF1C5CF15C41DC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5D1244E39145C077EC1DF53 /* Pods_nature_sound.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84153E231FC1E1D8002063CF /* background */ = {
+			isa = PBXGroup;
+			children = (
+				84153E211FC04625002063CF /* roundedBackground.swift */,
+			);
+			path = background;
+			sourceTree = "<group>";
+		};
+		84153E241FC1E1F4002063CF /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				84153E1D1FBDF3A8002063CF /* ControllView.xib */,
+				84153E1F1FBDF472002063CF /* ControllView.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		84153E251FC1E88A002063CF /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				846EE1FB1FA629D700903EDD /* FavoriteCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		84153E261FC1E8AA002063CF /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				84D08F151FB8BA4B004A5C28 /* ColorExtention.swift */,
+				84F3B13B205D11BF003E9BAF /* ViewControllerExtensions.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		84153E271FC333B4002063CF /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				841D3948237FFA48006C1262 /* resource.json */,
+				84153E371FC33486002063CF /* chinese_flute_mp3.mp3 */,
+				84153E511FC3348B002063CF /* dove_cooing.mp3 */,
+				84153E2F1FC33484002063CF /* duck_quack.mp3 */,
+				84153E2C1FC33484002063CF /* farm.mp3 */,
+				84153E351FC33486002063CF /* fav_calm_music.mp3 */,
+				84153E461FC33489002063CF /* fav_chill_song.mp3 */,
+				84153E571FC3348E002063CF /* fav_chinese_flute.mp3 */,
+				84153E531FC3348D002063CF /* fav_morning_beach_relaxing_guitar.mp3 */,
+				84153E521FC3348C002063CF /* fav_singing_bow.mp3 */,
+				84153E4E1FC3348B002063CF /* frog.mp3 */,
+				84153E471FC33489002063CF /* goat.mp3 */,
+				84153E401FC33488002063CF /* harp_mp3.mp3 */,
+				84153E4A1FC3348A002063CF /* hen_chicken.mp3 */,
+				84153E451FC33489002063CF /* horned_owl_mp3.mp3 */,
+				84153E341FC33485002063CF /* lovers_violin_mp3.mp3 */,
+				84153E3A1FC33487002063CF /* mp3_airplane_landing.mp3 */,
+				84153E421FC33488002063CF /* mp3_bird.mp3 */,
+				84153E391FC33486002063CF /* mp3_car.mp3 */,
+				84153E301FC33484002063CF /* mp3_centre_station.mp3 */,
+				84153E3C1FC33487002063CF /* mp3_chime.mp3 */,
+				84153E501FC3348B002063CF /* mp3_church_bell.mp3 */,
+				84153E311FC33485002063CF /* mp3_cicadas_noise.mp3 */,
+				84153E331FC33485002063CF /* mp3_clock_mantle.mp3 */,
+				84153E3F1FC33487002063CF /* mp3_cricket.mp3 */,
+				84153E541FC3348D002063CF /* mp3_fire.mp3 */,
+				84153E381FC33486002063CF /* mp3_forest.mp3 */,
+				84153E321FC33485002063CF /* mp3_gong.mp3 */,
+				84153E491FC3348A002063CF /* mp3_guitar.mp3 */,
+				84153E481FC33489002063CF /* mp3_ocean.mp3 */,
+				84153E431FC33488002063CF /* mp3_rain.mp3 */,
+				84153E4F1FC3348B002063CF /* mp3_strong_wind.mp3 */,
+				84153E561FC3348E002063CF /* mp3_thunderstorm_long.mp3 */,
+				841D39CE23845E3C006C1262 /* mp3_ambulance.mp3 */,
+				841D39C923845E39006C1262 /* mp3_cat.mp3 */,
+				841D39C723845E37006C1262 /* mp3_construction.mp3 */,
+				841D39C423845E35006C1262 /* mp3_cow.mp3 */,
+				841D39CC23845E3B006C1262 /* mp3_geese.mp3 */,
+				841D39CA23845E39006C1262 /* mp3_horse.mp3 */,
+				841D39CD23845E3B006C1262 /* mp3_pig.mp3 */,
+				841D39C523845E36006C1262 /* mp3_seagull.mp3 */,
+				841D39C623845E37006C1262 /* mp3_sheep.mp3 */,
+				841D39CB23845E3A006C1262 /* mp3_tiger.mp3 */,
+				841D39C823845E38006C1262 /* mp3_traffic.mp3 */,
+				841AA8CC205E21B900E3F9C7 /* mp3_gorilla.mp3 */,
+				84153E4D1FC3348B002063CF /* mp3_train.mp3 */,
+				84153E361FC33486002063CF /* mp3_twilight_piano.mp3 */,
+				84153E3B1FC33487002063CF /* mp3_waterfall.mp3 */,
+				84153E3D1FC33487002063CF /* new_fan.mp3 */,
+				84153E441FC33489002063CF /* new_stream.mp3 */,
+				84153E551FC3348E002063CF /* new_white_noise.mp3 */,
+				84153E3E1FC33487002063CF /* nice_harmonica_mp3.mp3 */,
+				84153E2E1FC33484002063CF /* rooster.mp3 */,
+				84153E411FC33488002063CF /* wolf_howl.mp3 */,
+				84153E2A1FC33476002063CF /* best_flute_ringtone.mp3 */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		841D39DA23870125006C1262 /* intro */ = {
+			isa = PBXGroup;
+			children = (
+				841D39DB2387051E006C1262 /* IntroPageItemController.swift */,
+				841D39DD238A2829006C1262 /* IntroViewController.swift */,
+			);
+			path = intro;
+			sourceTree = "<group>";
+		};
+		841D39DF238A7E6E006C1262 /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				841D39E0238A7FB5006C1262 /* BaseStyle.swift */,
+				841D39E2238A7FCB006C1262 /* CommonStyle.swift */,
+				841D39E4238A7FFF006C1262 /* CustomColors.swift */,
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
+		845D815A23903497008461F3 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				84695E3623996BC2001DD00E /* SoundCell.swift */,
+				845D8168239047B0008461F3 /* HomeViewController.swift */,
+				845D815B239034A7008461F3 /* dialog */,
+				846EE1F71FA4E13B00903EDD /* FavoritesViewController.swift */,
+				846EE1F91FA4E15500903EDD /* CollectionSoundViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		845D815B239034A7008461F3 /* dialog */ = {
+			isa = PBXGroup;
+			children = (
+				845D81662390425D008461F3 /* SoundsSettingController.swift */,
+				845D815C239034FE008461F3 /* SoundsSettingController.xib */,
+				845D815E239036E6008461F3 /* SoundSettingItemCell.swift */,
+				845D815F239036E6008461F3 /* SoundSettingItemCell.xib */,
+			);
+			path = dialog;
+			sourceTree = "<group>";
+		};
+		846EE1D11FA4DC5600903EDD = {
+			isa = PBXGroup;
+			children = (
+				846EE1DC1FA4DC5600903EDD /* nature sound */,
+				846EE1DB1FA4DC5600903EDD /* Products */,
+				1F981A9E4A2C5F2754AB02FD /* Pods */,
+				222F34F01AF1C5CF15C41DC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		846EE1DB1FA4DC5600903EDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				846EE1DA1FA4DC5600903EDD /* nature sound.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		846EE1DC1FA4DC5600903EDD /* nature sound */ = {
+			isa = PBXGroup;
+			children = (
+				841D39DF238A7E6E006C1262 /* styles */,
+				84153E271FC333B4002063CF /* resources */,
+				841AA8C3205E214600E3F9C7 /* resource.json */,
+				841D394923813B5F006C1262 /* data.txt */,
+				846EE1F41FA4DFEC00903EDD /* model */,
+				846EE1F31FA4DFE300903EDD /* controller */,
+				846EE1F21FA4DFDD00903EDD /* view */,
+				846EE1DD1FA4DC5600903EDD /* AppDelegate.swift */,
+				846EE1E11FA4DC5600903EDD /* Main.storyboard */,
+				846EE1E71FA4DC5600903EDD /* Assets.xcassets */,
+				846EE1E91FA4DC5600903EDD /* LaunchScreen.storyboard */,
+				846EE1EC1FA4DC5600903EDD /* Info.plist */,
+				846EE1E41FA4DC5600903EDD /* nature_sound.xcdatamodeld */,
+				84699C522078B654002A1352 /* Localizable.strings */,
+				841D38DC237FE6D3006C1262 /* SceneDelegate.swift */,
+				841D3944237FF296006C1262 /* soundResources.json */,
+			);
+			path = "nature sound";
+			sourceTree = "<group>";
+		};
+		846EE1F21FA4DFDD00903EDD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				84153E251FC1E88A002063CF /* cell */,
+				84153E241FC1E1F4002063CF /* custom */,
+				84153E231FC1E1D8002063CF /* background */,
+				84D08F131FB5FB91004A5C28 /* SoundButton.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		846EE1F31FA4DFE300903EDD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				845D815A23903497008461F3 /* home */,
+				841D39DA23870125006C1262 /* intro */,
+				84153E261FC1E8AA002063CF /* extension */,
+				84D08F1A1FBB4E43004A5C28 /* notifier */,
+				84D08F0C1FB213A0004A5C28 /* Singleton.swift */,
+				841AA8DD205E826D00E3F9C7 /* constants.swift */,
+				845D816A2393AD60008461F3 /* SoundManager.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		846EE1F41FA4DFEC00903EDD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				846EE1FF1FA78A2400903EDD /* SoundItem.swift */,
+				846EE2021FB0CF9400903EDD /* PlaySoundItem.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		84D08F1A1FBB4E43004A5C28 /* notifier */ = {
+			isa = PBXGroup;
+			children = (
+				84D08F1B1FBB4E6A004A5C28 /* Notifier.swift */,
+			);
+			path = notifier;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		846EE1D91FA4DC5600903EDD /* nature sound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846EE1EF1FA4DC5600903EDD /* Build configuration list for PBXNativeTarget "nature sound" */;
+			buildPhases = (
+				0E4ADAFA6CDCE64C0C4B2E0A /* [CP] Check Pods Manifest.lock */,
+				846EE1D61FA4DC5600903EDD /* Sources */,
+				846EE1D71FA4DC5600903EDD /* Frameworks */,
+				FC686F8C4156A4652FA768EE /* [CP] Embed Pods Frameworks */,
+				841D394D23836E9B006C1262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nature sound";
+			productName = "nature sound";
+			productReference = 846EE1DA1FA4DC5600903EDD /* nature sound.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		846EE1D21FA4DC5600903EDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = com.digimon;
+				TargetAttributes = {
+					846EE1D91FA4DC5600903EDD = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1110;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 846EE1D51FA4DC5600903EDD /* Build configuration list for PBXProject "nature sound" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+				fr,
+				"ar-SA",
+			);
+			mainGroup = 846EE1D11FA4DC5600903EDD;
+			productRefGroup = 846EE1DB1FA4DC5600903EDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				846EE1D91FA4DC5600903EDD /* nature sound */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		841D394D23836E9B006C1262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842E910C240BAD150084791C /* Localizable.strings in Resources */,
+				841D398D238459F1006C1262 /* frog.mp3 in Resources */,
+				841D398E238459F1006C1262 /* goat.mp3 in Resources */,
+				841D398F238459F1006C1262 /* harp_mp3.mp3 in Resources */,
+				841D3990238459F1006C1262 /* hen_chicken.mp3 in Resources */,
+				841D3991238459F1006C1262 /* horned_owl_mp3.mp3 in Resources */,
+				841D3992238459F1006C1262 /* lovers_violin_mp3.mp3 in Resources */,
+				841D3993238459F1006C1262 /* mp3_airplane_landing.mp3 in Resources */,
+				841D3994238459F1006C1262 /* mp3_bird.mp3 in Resources */,
+				841D3995238459F1006C1262 /* mp3_car.mp3 in Resources */,
+				841D3996238459F1006C1262 /* mp3_centre_station.mp3 in Resources */,
+				841D3997238459F1006C1262 /* mp3_chime.mp3 in Resources */,
+				841D39D323845E3D006C1262 /* mp3_traffic.mp3 in Resources */,
+				841D3998238459F1006C1262 /* mp3_church_bell.mp3 in Resources */,
+				841D3999238459F1006C1262 /* mp3_cicadas_noise.mp3 in Resources */,
+				841D399A238459F1006C1262 /* mp3_clock_mantle.mp3 in Resources */,
+				841D39D823845E3D006C1262 /* mp3_pig.mp3 in Resources */,
+				841D399B238459F1006C1262 /* mp3_cricket.mp3 in Resources */,
+				841D399C238459F1006C1262 /* mp3_fire.mp3 in Resources */,
+				841D399D238459F1006C1262 /* mp3_forest.mp3 in Resources */,
+				841D39CF23845E3D006C1262 /* mp3_cow.mp3 in Resources */,
+				841D399E238459F1006C1262 /* mp3_gong.mp3 in Resources */,
+				841D399F238459F1006C1262 /* mp3_guitar.mp3 in Resources */,
+				841D39A0238459F1006C1262 /* mp3_ocean.mp3 in Resources */,
+				841D39D123845E3D006C1262 /* mp3_sheep.mp3 in Resources */,
+				841D39D423845E3D006C1262 /* mp3_cat.mp3 in Resources */,
+				841D39A1238459F1006C1262 /* mp3_strong_wind.mp3 in Resources */,
+				841D39A7238459F1006C1262 /* mp3_gorilla.mp3 in Resources */,
+				845D8161239036E6008461F3 /* SoundSettingItemCell.xib in Resources */,
+				841D39AE238459F1006C1262 /* mp3_train.mp3 in Resources */,
+				841D39AF238459F1006C1262 /* mp3_twilight_piano.mp3 in Resources */,
+				841D39D023845E3D006C1262 /* mp3_seagull.mp3 in Resources */,
+				841D39B0238459F1006C1262 /* mp3_waterfall.mp3 in Resources */,
+				841D39B1238459F1006C1262 /* new_fan.mp3 in Resources */,
+				841D39B2238459F1006C1262 /* new_stream.mp3 in Resources */,
+				841D39D223845E3D006C1262 /* mp3_construction.mp3 in Resources */,
+				841D39D923845E3D006C1262 /* mp3_ambulance.mp3 in Resources */,
+				841D39B3238459F1006C1262 /* new_white_noise.mp3 in Resources */,
+				841D39B4238459F1006C1262 /* nice_harmonica_mp3.mp3 in Resources */,
+				841D39D723845E3D006C1262 /* mp3_geese.mp3 in Resources */,
+				841D39B5238459F1006C1262 /* rooster.mp3 in Resources */,
+				841D39B6238459F1006C1262 /* wolf_howl.mp3 in Resources */,
+				841D39B7238459F1006C1262 /* best_flute_ringtone.mp3 in Resources */,
+				841D3989238459E4006C1262 /* chinese_flute_mp3.mp3 in Resources */,
+				841D398A238459E4006C1262 /* dove_cooing.mp3 in Resources */,
+				841D398B238459E4006C1262 /* duck_quack.mp3 in Resources */,
+				845D815D239034FE008461F3 /* SoundsSettingController.xib in Resources */,
+				841D39D623845E3D006C1262 /* mp3_tiger.mp3 in Resources */,
+				841D398C238459E4006C1262 /* farm.mp3 in Resources */,
+				841D39872384599B006C1262 /* mp3_thunderstorm_long.mp3 in Resources */,
+				841D39862384598A006C1262 /* mp3_rain.mp3 in Resources */,
+				841D394E23836EA3006C1262 /* resource.json in Resources */,
+				841D39D523845E3D006C1262 /* mp3_horse.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E4ADAFA6CDCE64C0C4B2E0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nature sound-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC686F8C4156A4652FA768EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nature sound/Pods-nature sound-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nature sound/Pods-nature sound-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		846EE1D61FA4DC5600903EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841D394A23813C3D006C1262 /* data.txt in Sources */,
+				841D3945237FF3A2006C1262 /* soundResources.json in Sources */,
+				841D393E237FEFF0006C1262 /* nature sound.app in Sources */,
+				841D393F237FEFF0006C1262 /* Pods-nature sound.debug.xcconfig in Sources */,
+				841D3940237FEFF0006C1262 /* Pods-nature sound.release.xcconfig in Sources */,
+				845D816B2393AD60008461F3 /* SoundManager.swift in Sources */,
+				841D3941237FEFF0006C1262 /* Pods_nature_sound.framework in Sources */,
+				841D3903237FEF3F006C1262 /* resource.json in Sources */,
+				841D3904237FEF3F006C1262 /* ControllView.xib in Sources */,
+				841D3905237FEF3F006C1262 /* LaunchScreen.storyboard in Sources */,
+				841D3902237FEEE3006C1262 /* Assets.xcassets in Sources */,
+				845D81672390425D008461F3 /* SoundsSettingController.swift in Sources */,
+				841D3901237FEE2E006C1262 /* Main.storyboard in Sources */,
+				841D39E1238A7FB5006C1262 /* BaseStyle.swift in Sources */,
+				84695E3723996BC2001DD00E /* SoundCell.swift in Sources */,
+				84D08F141FB5FB91004A5C28 /* SoundButton.swift in Sources */,
+				846EE2001FA78A2400903EDD /* SoundItem.swift in Sources */,
+				845D8160239036E6008461F3 /* SoundSettingItemCell.swift in Sources */,
+				84153E221FC04625002063CF /* roundedBackground.swift in Sources */,
+				841D39E5238A7FFF006C1262 /* CustomColors.swift in Sources */,
+				84D08F161FB8BA4B004A5C28 /* ColorExtention.swift in Sources */,
+				846EE2031FB0CF9400903EDD /* PlaySoundItem.swift in Sources */,
+				846EE1DE1FA4DC5600903EDD /* AppDelegate.swift in Sources */,
+				841D38DD237FE6D3006C1262 /* SceneDelegate.swift in Sources */,
+				841D39E3238A7FCB006C1262 /* CommonStyle.swift in Sources */,
+				845D8169239047B0008461F3 /* HomeViewController.swift in Sources */,
+				841D39DC2387051E006C1262 /* IntroPageItemController.swift in Sources */,
+				846EE1FC1FA629D700903EDD /* FavoriteCell.swift in Sources */,
+				84153E201FBDF472002063CF /* ControllView.swift in Sources */,
+				84D08F0D1FB213A0004A5C28 /* Singleton.swift in Sources */,
+				841AA8DE205E826D00E3F9C7 /* constants.swift in Sources */,
+				846EE1E61FA4DC5600903EDD /* nature_sound.xcdatamodeld in Sources */,
+				846EE1F81FA4E13B00903EDD /* FavoritesViewController.swift in Sources */,
+				84D08F1C1FBB4E6A004A5C28 /* Notifier.swift in Sources */,
+				846EE1FA1FA4E15500903EDD /* CollectionSoundViewController.swift in Sources */,
+				841D39DE238A2829006C1262 /* IntroViewController.swift in Sources */,
+				84F3B13C205D11BF003E9BAF /* ViewControllerExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84699C522078B654002A1352 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84699C532078B654002A1352 /* Base */,
+				84699C562078B66D002A1352 /* vi */,
+				842E910F240BADC50084791C /* fr */,
+				842E9112240BAFFD0084791C /* ar-SA */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		846EE1E11FA4DC5600903EDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846EE1E21FA4DC5600903EDD /* Base */,
+				84699C502078B472002A1352 /* vi */,
+				842E910D240BADC40084791C /* fr */,
+				842E9110240BAFFC0084791C /* ar-SA */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		846EE1E91FA4DC5600903EDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846EE1EA1FA4DC5600903EDD /* Base */,
+				84699C512078B473002A1352 /* vi */,
+				842E910E240BADC40084791C /* fr */,
+				842E9111240BAFFC0084791C /* ar-SA */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		846EE1ED1FA4DC5600903EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		846EE1EE1FA4DC5600903EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		846EE1F01FA4DC5600903EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0A1D610E1FF13D1B8C94F99 /* Pods-nature sound.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "nature sound/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digimon.naturesound2018;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ced45dba-cae4-47f9-8640-c0eda9c1a84a";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		846EE1F11FA4DC5600903EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58C5E4F7620930A3681E9AAA /* Pods-nature sound.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "nature sound/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digimon.naturesound2018;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ced45dba-cae4-47f9-8640-c0eda9c1a84a";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		846EE1D51FA4DC5600903EDD /* Build configuration list for PBXProject "nature sound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846EE1ED1FA4DC5600903EDD /* Debug */,
+				846EE1EE1FA4DC5600903EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		846EE1EF1FA4DC5600903EDD /* Build configuration list for PBXNativeTarget "nature sound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846EE1F01FA4DC5600903EDD /* Debug */,
+				846EE1F11FA4DC5600903EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		846EE1E41FA4DC5600903EDD /* nature_sound.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				846EE1E51FA4DC5600903EDD /* nature_sound.xcdatamodel */,
+			);
+			currentVersion = 846EE1E51FA4DC5600903EDD /* nature_sound.xcdatamodel */;
+			path = nature_sound.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 846EE1D21FA4DC5600903EDD /* Project object */;
+}
