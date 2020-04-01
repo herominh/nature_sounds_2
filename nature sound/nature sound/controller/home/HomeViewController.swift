@@ -68,10 +68,22 @@ class HomeViewController: UIViewController, UIPageViewControllerDataSource, UIPa
         updateControllView()
     }
     
-    //
+    private var playCount:Int = 0
     @objc func onSoundControl(_ notification: Notification) {
         guard let sound = notification.userInfo?["sound"] as? PlaySoundItem else { return }
         if sound.isPlaying {
+            playCount += 1
+            if(0 == (playCount%4))
+            {
+                DynAds.showInterstitial(viewController: self){(allowOriginalAds) in
+                    if(true == allowOriginalAds){
+                        mLog("display original ad")
+                        //display your ads here
+                    }
+                }
+            }
+
+
             SoundManager.shared.playSound(object: sound)
         } else {
             SoundManager.shared.stopSound(id: sound.sound.id)

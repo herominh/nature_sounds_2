@@ -9,4 +9,14 @@ target 'nature sound' do
   pod 'Toast-Swift', '~> 5.0.0'
   pod 'SnapKit', '~> 4.0.0'
 
+  # Pods for DynAds
+  pod 'ChartboostSDK', '8.1.0'
+  pod 'VungleSDK-iOS', '6.5.2'
+  pod 'AdColony', '4.1.4'
+  pod 'AppLovinSDK', '6.11.6'
+  pod 'InMobiSDK/Core', '9.0.6'
+  pod 'smaato-ios-sdk/Interstitial', '21.3.2'
+  pod 'TapjoySDK', '12.4.2'
+  pod 'IronSourceSDK','6.15.0.1'
+  pod 'StartAppSDK', '4.4.3'
 end

@@ -21,7 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //window = UIWindow(frame: UIScreen.main.bounds)
         //window?.makeKeyAndVisible()
 //        GADMobileAds.configure(withApplicationID: "ca-app-pub-8973254785684770~8615129807")
-        
+        DynAds.start(){(allowOriginalAds) in
+            if(true == allowOriginalAds){
+                mLog("start your ad here")
+                //start your ads here
+            }
+            
+        }
         return true
     }
 
